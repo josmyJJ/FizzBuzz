@@ -1,6 +1,6 @@
 package com.company;
 
-//Bonus of Seven version of FizzBuzz
+//DOUBLE BONUS version of FizzBuzz
 import java.util.Random;
 
 public class FizzBuzz {
@@ -58,6 +58,33 @@ public class FizzBuzz {
                         counter = 0;
                     }
                 }
+                //
+            }if(i>20){
+                String hp = Integer.toString(i);
+                //System.out.println( i + " HP " + hp);
+                String endNum = hp.substring(1);
+                if(endNum.equals("1")){
+                    System.out.println(i + " - Harry");
+                }else if(endNum.equals("2")){
+                    System.out.println(i + " - Harry");
+                }else if(endNum.equals("3")){
+                    System.out.println(i + " - Harry");
+                }else if(endNum.equals("4")){
+                    System.out.println(i + " - Potter");
+                }else if(endNum.equals("5")){
+                    System.out.println(i + " - Potter");
+                }else if(endNum.equals("6")){
+                    System.out.println(i + " - Harry");
+                }else if(endNum.equals("7")){
+                    System.out.println(i + " - Harry");
+                }else if(endNum.equals("8")){
+                    System.out.println(i + " - Harry");
+                }else if(endNum.equals("9")){
+                    System.out.println(i + " - Potter");
+                }else if(endNum.equals("0")){
+                    System.out.println(i + " - Potter");
+                }
+
             }
             else {
                 System.out.println(val);
