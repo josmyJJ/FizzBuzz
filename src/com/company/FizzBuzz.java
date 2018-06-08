@@ -1,6 +1,6 @@
 package com.company;
 
-//Multiple of Seven version of FizzBuzz
+//Bonus of Seven version of FizzBuzz
 import java.util.Random;
 
 public class FizzBuzz {
@@ -14,6 +14,7 @@ public class FizzBuzz {
     private static void getcrazyFizzBuzz() {
         randStart = 1 + rand.nextInt(101);
         randEnd = 1 + rand.nextInt(101);
+
         if(randEnd<randStart) {
             System.out.println(randStart);
             System.out.println(randEnd);
@@ -33,48 +34,35 @@ public class FizzBuzz {
             System.out.println("This won't take long!");
             System.out.println("::::::::::::::::::");
         }
-
     }
     private static void getFizzBuzz() {
+        int counter = 0;
         for(int i = randStart; i <= randEnd; i++) {
+
             int val = i;
             if((i%3==0) && (i%5==0)) {
-                System.out.println("FizzBuzz");
+                System.out.println("Fizz Buzz");
             }else if(i%3==0) {
                 System.out.println("Fizz");
             }else if(i%5==0) {
                 System.out.println("Buzz");
             }else if(i%7==0) {
-                System.out.println(i + "- muliple of seven");
-            } else {
+                System.out.println(i + " - multiples of seven");
+            }else if ((i%2==0)){
+
+                String[] list = {"Rock", "Paper", "Scissors", "Lizard", "Spock"};
+                if(i > 10){
+                    System.out.println(i + " - " + list[counter]);
+                    counter++;
+                    if(counter == 5){
+                        counter = 0;
+                    }
+                }
+            }
+            else {
                 System.out.println(val);
             }
         }
     }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
