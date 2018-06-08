@@ -8,6 +8,7 @@ public class FizzBuzz {
     static int randStart, randEnd;
 
     public static void main(String[] args) {
+
         getcrazyFizzBuzz();
     }
 
@@ -15,13 +16,13 @@ public class FizzBuzz {
         randStart = 1 + rand.nextInt(101);
         randEnd = 1 + rand.nextInt(101);
 
-        if(randEnd<randStart) {
+        if (randEnd < randStart) {
             System.out.println(randStart);
             System.out.println(randEnd);
             System.out.println("Ending number is less than staring number. Please try again!");
-        }else if(randStart == randEnd) {
+        } else if (randStart == randEnd) {
             System.out.println("Shazam!!");
-        }else {
+        } else {
             // getDigits() method checks number of digits
             getDigits();
             // Call the getFizzBuzz() method
@@ -59,7 +60,7 @@ public class FizzBuzz {
                     }
                 }
                 //
-            }if(i>20){
+            }else if(i>20){
                 String hp = Integer.toString(i);
                 //System.out.println( i + " HP " + hp);
                 String endNum = hp.substring(1);
@@ -84,9 +85,7 @@ public class FizzBuzz {
                 }else if(endNum.equals("0")){
                     System.out.println(i + " - Potter");
                 }
-
-            }
-            else {
+            } else {
                 System.out.println(val);
             }
         }
