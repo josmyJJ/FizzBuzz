@@ -1,17 +1,25 @@
 package com.company;
-//Working version of FizzBuzz
-public class FizzBuzz {
+// Shazam version of FizzBuzz
 
-    public static void main(String[] args)  {
-        number1to100();
+import java.util.Random;
+
+public class FizzBuzz {
+    static Random rand = new Random();
+    public static void main(String[] args) {number1to100();
     }
 
     // Method for findig the multiples
     private static void number1to100() {
-        // Write 1 to 100
-        for(int i = 1; i <= 100; i++) {
+        int randStart = 1 + rand.nextInt(101);
+        int randEnd = 1 + rand.nextInt(101);
+        System.out.println(randStart);
+        System.out.println(randEnd);
+
+        for(int i = randStart; i <= randEnd; i++) {
             int val = i;
-            if((i%3==0) && (i%5==0)) {
+            if(randStart == randEnd) {
+                System.out.println("Shazam!!");
+            }else if((i%3==0) && (i%5==0)) {
                 System.out.println("FizzBuzz");
             }else if(i%3==0) {
                 System.out.println("Fizz");
